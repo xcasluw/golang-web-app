@@ -1,3 +1,3 @@
-module github.com/xcasluw/hello-world-web-app
+module github.com/xcasluw/golang-basic-app
 
-go 1.19
+go 1.13
