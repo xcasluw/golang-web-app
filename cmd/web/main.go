@@ -25,12 +25,15 @@ func main() {
 
 	repo := handlers.NewRepo(&app)
 	handlers.NewHandlers(repo)
-
 	render.NewTemplates(&app)
 
-	http.HandleFunc("/", handlers.Repo.Home)
-	http.HandleFunc("/about", handlers.Repo.About)
-
 	fmt.Println("Starting application on port", portNumber)
-	_ = http.ListenAndServe(":8080", nil)
+
+	server := &http.Server{
+		Addr:    portNumber,
+		Handler: routes(&app),
+	}
+
+	err = server.ListenAndServe()
+	log.Fatal(err)
 }
