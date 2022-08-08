@@ -7,6 +7,7 @@ import (
 	"net/http"
 
 	"github.com/xcasluw/golang-basic-app/internal/config"
+	"github.com/xcasluw/golang-basic-app/internal/forms"
 	"github.com/xcasluw/golang-basic-app/internal/models"
 	"github.com/xcasluw/golang-basic-app/internal/render"
 )
@@ -55,7 +56,14 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 
 // Reservations renders the make a reservation page and displays form
 func (m *Repository) Reservations(w http.ResponseWriter, r *http.Request) {
-	render.RenderTemplate(w, r, "make-reservation.page.tmpl", &models.TemplateData{})
+	render.RenderTemplate(w, r, "make-reservation.page.tmpl", &models.TemplateData{
+		Form: forms.New(nil),
+	})
+}
+
+// PostReservations handles the posting of a reservation form
+func (m *Repository) PostReservations(w http.ResponseWriter, r *http.Request) {
+
 }
 
 // Generals renders the room page
