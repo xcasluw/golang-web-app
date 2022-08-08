@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/xcasluw/golang-basic-app/pkg/config"
-	"github.com/xcasluw/golang-basic-app/pkg/models"
-	"github.com/xcasluw/golang-basic-app/pkg/render"
+	"github.com/xcasluw/golang-basic-app/internal/config"
+	"github.com/xcasluw/golang-basic-app/internal/models"
+	"github.com/xcasluw/golang-basic-app/internal/render"
 )
 
 // Repo the repository used by the handlers

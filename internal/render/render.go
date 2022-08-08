@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 
 	"github.com/justinas/nosurf"
-	"github.com/xcasluw/golang-basic-app/pkg/config"
-	"github.com/xcasluw/golang-basic-app/pkg/models"
+	"github.com/xcasluw/golang-basic-app/internal/config"
+	"github.com/xcasluw/golang-basic-app/internal/models"
 )
 
 var functions = template.FuncMap{}

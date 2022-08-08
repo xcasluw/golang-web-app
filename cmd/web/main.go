@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/xcasluw/golang-basic-app/pkg/config"
-	"github.com/xcasluw/golang-basic-app/pkg/handlers"
-	"github.com/xcasluw/golang-basic-app/pkg/render"
+	"github.com/xcasluw/golang-basic-app/internal/config"
+	"github.com/xcasluw/golang-basic-app/internal/handlers"
+	"github.com/xcasluw/golang-basic-app/internal/render"
 )
 
 const portNumber = ":8080"
