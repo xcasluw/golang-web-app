@@ -18,14 +18,17 @@ This is the repository for my bookings and reservations project.
 
 # How to run tests
 
-### default
+### default (current directory)
 `go test`
 
-### more detailed test
+### more detailed test (current directory)
 `go test -v`
 
-### test with coverage
+### test with coverage (current directory)
 `go test -cover`
 
-### test with html file to check uncovered lines
+### test with html file to check uncovered lines (current directory)
 `go test -coverprofile=coverage.out && go tool cover -html=coverage.out`
+
+### test all directories (root application directory)
+`go test -v ./... `
