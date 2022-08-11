@@ -7,6 +7,15 @@ This is the repository for my bookings and reservations project.
 - Uses [alex edwards SCS](https://github.com/alexedwards/scs) session management
 - Uses [nosurf](https://github.com/justinas/nosurf)
 
+# Easy way to start the application
+- if you are using linux or mac, make sure to run to create an executable:
+`chmod +x run.sh`
+
+- and after that, just run: `./run.sh`
+
+- if you don't want to use this way, you can run: `go run ./cmd/web`
+
+
 # How to run tests
 
 ### default
